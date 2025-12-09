@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Estudio contable profesional - Servicios de contabilidad, asesoría fiscal y consultoría empresarial">
-    <title>Estudio Contable RPL - Asesoría Contable y Fiscal</title>
+    <meta name="description" content="RPL Estudio Contable - Servicios de contabilidad, asesoría fiscal y consultoría empresarial">
+    <title>RPL Estudio Contable - Asesoría Contable y Fiscal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header / Navegación -->
     <header class="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <h2>Estudio Contable RPL</h2>
+                <div class="logo">
+                    <div class="logo__initials">RLP</div>
+                    <div class="logo__text">Estudio Contable</div>
+                </div>
             </div>
             <ul class="nav__menu" id="nav-menu">
                 <li><a href="#inicio" class="nav__link">Inicio</a></li>
-                <li><a href="#servicios" class="nav__link">Servicios</a></li>
                 <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav__link">Servicios</a></li>
+                <li><a href="#noticias" class="nav__link">Noticias</a></li>
                 <li><a href="#contacto" class="nav__link">Contacto</a></li>
             </ul>
             <div class="nav__toggle" id="nav-toggle">
@@ -48,12 +53,55 @@
             <div class="hero__image">
                 <div class="hero__illustration">
                     <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="50" y="50" width="300" height="200" fill="#4F46E5" opacity="0.1" rx="10"/>
-                        <rect x="70" y="70" width="260" height="40" fill="#4F46E5" opacity="0.3" rx="5"/>
-                        <rect x="70" y="130" width="200" height="30" fill="#4F46E5" opacity="0.3" rx="5"/>
-                        <rect x="70" y="180" width="240" height="30" fill="#4F46E5" opacity="0.3" rx="5"/>
-                        <circle cx="320" cy="100" r="30" fill="#10B981"/>
+                        <rect x="50" y="50" width="300" height="200" fill="rgba(255,255,255,0.1)" rx="10"/>
+                        <rect x="70" y="70" width="260" height="40" fill="rgba(255,255,255,0.3)" rx="5"/>
+                        <rect x="70" y="130" width="200" height="30" fill="rgba(255,255,255,0.3)" rx="5"/>
+                        <rect x="70" y="180" width="240" height="30" fill="rgba(255,255,255,0.3)" rx="5"/>
+                        <circle cx="320" cy="100" r="30" fill="#00d4ff"/>
                     </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about__content">
+                <div class="section__header">
+                    <h2 class="section__title">Sobre Nosotros</h2>
+                </div>
+                <div class="about__text">
+                    <p class="about__description">
+                        RPL Estudio Contable es una firma especializada en servicios contables, fiscales y legales 
+                        con una sólida trayectoria en el mercado. Nos destacamos por brindar soluciones integrales 
+                        y personalizadas que se adaptan a las necesidades específicas de cada cliente, ya sean 
+                        empresas, emprendedores o particulares.
+                    </p>
+                    <p class="about__description">
+                        Nuestro equipo de profesionales altamente capacitados está comprometido con la excelencia 
+                        y el cumplimiento de los más altos estándares de calidad. Trabajamos con transparencia, 
+                        confidencialidad y dedicación para ser tu socio estratégico en el crecimiento de tu negocio.
+                    </p>
+                    <p class="about__description">
+                        En RPL Estudio Contable entendemos que cada cliente es único, por lo que ofrecemos un 
+                        servicio cercano y personalizado, manteniéndonos siempre actualizados con las últimas 
+                        normativas fiscales y contables para brindarte el mejor asesoramiento.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <h3 class="stat__number">+500</h3>
+                            <p class="stat__label">Clientes Satisfechos</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">+15</h3>
+                            <p class="stat__label">Años de Experiencia</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">100%</h3>
+                            <p class="stat__label">Compromiso</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,7 +122,6 @@
                             <polyline points="14 2 14 8 20 8"></polyline>
                             <line x1="16" y1="13" x2="8" y2="13"></line>
                             <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
                         </svg>
                     </div>
                     <h3 class="service__title">Contabilidad General</h3>
@@ -82,6 +129,11 @@
                         Llevamos la contabilidad de tu empresa de manera profesional y organizada, 
                         cumpliendo con todas las normativas vigentes.
                     </p>
+                    <div class="service__price">
+                        <span class="price__label">Desde</span>
+                        <span class="price__amount">$XX.XXX</span>
+                        <span class="price__period">/mes</span>
+                    </div>
                 </div>
                 <div class="service__card">
                     <div class="service__icon">
@@ -95,6 +147,11 @@
                         Te ayudamos a optimizar tu carga fiscal y cumplir con todas tus obligaciones 
                         tributarias de manera eficiente.
                     </p>
+                    <div class="service__price">
+                        <span class="price__label">Desde</span>
+                        <span class="price__amount">$XX.XXX</span>
+                        <span class="price__period">/mes</span>
+                    </div>
                 </div>
                 <div class="service__card">
                     <div class="service__icon">
@@ -110,6 +167,11 @@
                         Asesoramiento estratégico para la toma de decisiones financieras 
                         y el crecimiento sostenible de tu empresa.
                     </p>
+                    <div class="service__price">
+                        <span class="price__label">Desde</span>
+                        <span class="price__amount">$XX.XXX</span>
+                        <span class="price__period">/mes</span>
+                    </div>
                 </div>
                 <div class="service__card">
                     <div class="service__icon">
@@ -123,6 +185,11 @@
                         Gestión completa de nóminas, liquidaciones y cargas sociales 
                         para tu personal.
                     </p>
+                    <div class="service__price">
+                        <span class="price__label">Desde</span>
+                        <span class="price__amount">$XX.XXX</span>
+                        <span class="price__period">/mes</span>
+                    </div>
                 </div>
                 <div class="service__card">
                     <div class="service__icon">
@@ -137,6 +204,11 @@
                         Realizamos auditorías contables para verificar la correcta 
                         gestión de tus recursos financieros.
                     </p>
+                    <div class="service__price">
+                        <span class="price__label">Desde</span>
+                        <span class="price__amount">$XX.XXX</span>
+                        <span class="price__period">/proyecto</span>
+                    </div>
                 </div>
                 <div class="service__card">
                     <div class="service__icon">
@@ -152,43 +224,108 @@
                         Preparación y presentación de todas tus declaraciones juradas 
                         de manera oportuna y precisa.
                     </p>
+                    <div class="service__price">
+                        <span class="price__label">Desde</span>
+                        <span class="price__amount">$XX.XXX</span>
+                        <span class="price__period">/declaración</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Nosotros Section -->
-    <section class="about" id="nosotros">
+    <!-- Noticias Section -->
+    <section class="news" id="noticias">
         <div class="container">
-            <div class="about__content">
-                <div class="about__text">
-                    <h2 class="section__title">Sobre Nosotros</h2>
-                    <p class="about__description">
-                        Con años de experiencia en el sector contable, nuestro estudio se ha consolidado 
-                        como una referencia en asesoría contable y fiscal. Nos especializamos en brindar 
-                        soluciones personalizadas que se adaptan a las necesidades específicas de cada cliente.
-                    </p>
-                    <p class="about__description">
-                        Nuestro equipo de profesionales altamente capacitados está comprometido con la 
-                        excelencia y el cumplimiento de los más altos estándares de calidad. Trabajamos 
-                        con transparencia, confidencialidad y dedicación para ser tu socio estratégico 
-                        en el crecimiento de tu negocio.
-                    </p>
-                    <div class="about__stats">
-                        <div class="stat">
-                            <h3 class="stat__number">+500</h3>
-                            <p class="stat__label">Clientes Satisfechos</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="stat__number">+15</h3>
-                            <p class="stat__label">Años de Experiencia</p>
-                        </div>
-                        <div class="stat">
-                            <h3 class="stat__number">100%</h3>
-                            <p class="stat__label">Compromiso</p>
-                        </div>
+            <div class="section__header">
+                <h2 class="section__title">Noticias</h2>
+                <p class="section__subtitle">Mantente informado sobre las últimas novedades contables, fiscales y legales</p>
+            </div>
+            <div class="news__grid">
+                <article class="news__card">
+                    <div class="news__date">
+                        <span class="news__day">15</span>
+                        <span class="news__month">ENE</span>
                     </div>
-                </div>
+                    <div class="news__content">
+                        <h3 class="news__title">Nuevas normativas fiscales 2024</h3>
+                        <p class="news__excerpt">
+                            Conoce los cambios más importantes en la legislación fiscal que entrarán en vigor 
+                            este año y cómo afectan a tu empresa.
+                        </p>
+                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">
+                        <span class="news__day">08</span>
+                        <span class="news__month">ENE</span>
+                    </div>
+                    <div class="news__content">
+                        <h3 class="news__title">Plazos de presentación de declaraciones juradas</h3>
+                        <p class="news__excerpt">
+                            Importante recordatorio sobre los plazos para la presentación de declaraciones 
+                            juradas y cómo evitar sanciones.
+                        </p>
+                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">
+                        <span class="news__day">22</span>
+                        <span class="news__month">DIC</span>
+                    </div>
+                    <div class="news__content">
+                        <h3 class="news__title">Beneficios fiscales para pymes</h3>
+                        <p class="news__excerpt">
+                            Descubre los beneficios fiscales y contables disponibles para pequeñas y medianas 
+                            empresas en el nuevo régimen.
+                        </p>
+                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">
+                        <span class="news__day">10</span>
+                        <span class="news__month">DIC</span>
+                    </div>
+                    <div class="news__content">
+                        <h3 class="news__title">Actualización en normativa laboral</h3>
+                        <p class="news__excerpt">
+                            Cambios importantes en la legislación laboral que impactan en la liquidación 
+                            de sueldos y cargas sociales.
+                        </p>
+                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">
+                        <span class="news__day">28</span>
+                        <span class="news__month">NOV</span>
+                    </div>
+                    <div class="news__content">
+                        <h3 class="news__title">Digitalización de procesos contables</h3>
+                        <p class="news__excerpt">
+                            Cómo la tecnología está transformando la gestión contable y qué herramientas 
+                            pueden optimizar tu negocio.
+                        </p>
+                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">
+                        <span class="news__day">15</span>
+                        <span class="news__month">NOV</span>
+                    </div>
+                    <div class="news__content">
+                        <h3 class="news__title">Requisitos para auditorías externas</h3>
+                        <p class="news__excerpt">
+                            Todo lo que necesitas saber sobre los requisitos y procedimientos para realizar 
+                            una auditoría contable exitosa.
+                        </p>
+                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -234,22 +371,23 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>info@estudiocontablerpl.com</p>
+                            <p>info@rplestudiocontable.com</p>
+                            <p>contadores@rplestudiocontable.com</p>
                         </div>
                     </div>
                 </div>
                 <form class="contact__form" id="contact-form">
                     <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Nombre completo" required>
+                        <input type="text" class="form__input" name="nombre" placeholder="Nombre completo" required>
                     </div>
                     <div class="form__group">
-                        <input type="email" class="form__input" placeholder="Email" required>
+                        <input type="email" class="form__input" name="email" placeholder="Email" required>
                     </div>
                     <div class="form__group">
-                        <input type="tel" class="form__input" placeholder="Teléfono">
+                        <input type="tel" class="form__input" name="telefono" placeholder="Teléfono" required>
                     </div>
                     <div class="form__group">
-                        <textarea class="form__input form__textarea" placeholder="Mensaje" rows="5" required></textarea>
+                        <textarea class="form__input form__textarea" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
                 </form>
@@ -261,31 +399,52 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <div class="footer__section">
-                    <h3>Estudio Contable RPL</h3>
-                    <p>Asesoría contable y fiscal de confianza para tu negocio.</p>
+                <div class="footer__section footer__logo-section">
+                    <div class="logo logo--footer">
+                        <div class="logo__initials">RLP</div>
+                        <div class="logo__text">Estudio Contable</div>
+                    </div>
+                    <p class="footer__description">Asesoría contable y fiscal de confianza para tu negocio.</p>
                 </div>
                 <div class="footer__section">
                     <h4>Enlaces Rápidos</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer__section">
-                    <h4>Servicios</h4>
-                    <ul>
-                        <li><a href="#servicios">Contabilidad General</a></li>
-                        <li><a href="#servicios">Asesoría Fiscal</a></li>
-                        <li><a href="#servicios">Consultoría</a></li>
-                        <li><a href="#servicios">Liquidación de Sueldos</a></li>
-                    </ul>
+                    <h4>Contacto</h4>
+                    <div class="footer__contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Tu dirección aquí, Ciudad, País</p>
+                        <p><i class="fas fa-phone"></i> +54 11 1234-5678</p>
+                        <p><i class="fas fa-envelope"></i> info@rplestudiocontable.com</p>
+                        <p><i class="fas fa-envelope"></i> contadores@rplestudiocontable.com</p>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Síguenos</h4>
+                    <div class="footer__social">
+                        <a href="#" class="social__link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social__link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social__link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social__link" aria-label="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2024 Estudio Contable RPL. Todos los derechos reservados.</p>
+                <p>&copy; 2024 RPL Estudio Contable. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -293,4 +452,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

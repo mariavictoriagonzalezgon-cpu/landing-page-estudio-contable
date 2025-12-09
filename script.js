@@ -34,24 +34,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handler
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Here you would typically send the data to a server
-        // For now, we'll just show an alert
-        alert('¡Gracias por contactarnos! Nos pondremos en contacto contigo pronto.');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
 
 // Add scroll effect to header
 let lastScroll = 0;
@@ -99,4 +81,43 @@ document.querySelectorAll('.stat').forEach(stat => {
     stat.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(stat);
 });
+
+// Observe news cards
+document.querySelectorAll('.news__card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+});
+
+// Form submission with email integration (using mailto as fallback)
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const nombre = formData.get('nombre');
+        const email = formData.get('email');
+        const telefono = formData.get('telefono');
+        const mensaje = formData.get('mensaje');
+        
+        // Create mailto link as fallback
+        // In production, you would send this to a server endpoint
+        const subject = encodeURIComponent(`Contacto desde web - ${nombre}`);
+        const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\nTeléfono: ${telefono}\n\nMensaje:\n${mensaje}`);
+        const mailtoLink = `mailto:info@rplestudiocontable.com?subject=${subject}&body=${body}`;
+        
+        // For now, show success message
+        // In production, you would use fetch() to send to your backend
+        alert('¡Gracias por contactarnos! Nos pondremos en contacto contigo pronto.\n\nEn producción, este formulario enviará los datos directamente a tu correo.');
+        
+        // Optionally open mailto (commented out by default)
+        // window.location.href = mailtoLink;
+        
+        // Reset form
+        contactForm.reset();
+    });
+}
 
