@@ -45,7 +45,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--primary-dark);
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--border-light);
     border-radius: 8px;
     padding: 0.75rem 1.5rem;
@@ -78,7 +78,7 @@ body {
 
 /* Header / Navigation */
 .header {
-    background: var(--bg-white);
+    background: var(--primary-dark);
     box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
@@ -105,7 +105,7 @@ body {
 
 .nav__link {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--bg-white);
     font-weight: 500;
     transition: var(--transition);
     position: relative;
@@ -113,7 +113,7 @@ body {
 }
 
 .nav__link:hover {
-    color: var(--primary-blue);
+    color: var(--bg-white);
 }
 
 .nav__link::after {
@@ -141,7 +141,7 @@ body {
 .nav__toggle span {
     width: 25px;
     height: 3px;
-    background: var(--text-dark);
+    background: var(--bg-white);
     transition: var(--transition);
     border-radius: 2px;
 }
@@ -691,7 +691,7 @@ body {
         top: 80px;
         left: -100%;
         flex-direction: column;
-        background: var(--bg-white);
+        background: var(--primary-dark);
         width: 100%;
         text-align: center;
         transition: var(--transition);
@@ -702,7 +702,7 @@ body {
 
     .nav__menu li {
         padding: 1rem 0;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .nav__menu.active {

@@ -43,9 +43,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 100) {
-        header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+        header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.3)';
     } else {
-        header.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
+        header.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.1)';
     }
     
     lastScroll = currentScroll;
