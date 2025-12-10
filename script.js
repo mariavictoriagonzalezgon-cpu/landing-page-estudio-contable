@@ -74,13 +74,6 @@ document.querySelectorAll('.service__card').forEach(card => {
     observer.observe(card);
 });
 
-// Observe stats
-document.querySelectorAll('.stat').forEach(stat => {
-    stat.style.opacity = '0';
-    stat.style.transform = 'translateY(20px)';
-    stat.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(stat);
-});
 
 
 // Form submission with email integration (using mailto as fallback)
