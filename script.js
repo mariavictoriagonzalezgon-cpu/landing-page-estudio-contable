@@ -333,9 +333,13 @@ if (cotizacionForm) {
         emailBody += '🔹 CÓMO DESEA SER CONTACTADO\n';
         emailBody += '─────────────────────────────────────────────────────────\n';
         const contactos = formData.getAll('contacto');
-        contactos.forEach(contacto => {
-            emailBody += `• ${contacto}\n`;
-        });
+        if (contactos.length > 0) {
+            contactos.forEach(contacto => {
+                emailBody += `• ${contacto}\n`;
+            });
+        } else {
+            emailBody += 'No especificado\n';
+        }
         
         // Create mailto link
         const subject = encodeURIComponent('Nueva Solicitud de Cotización - RPL Estudio Contable');
