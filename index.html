@@ -25,7 +25,6 @@
                 <li><a href="#inicio" class="nav__link">Inicio</a></li>
                 <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
                 <li><a href="#servicios" class="nav__link">Servicios</a></li>
-                <li><a href="#noticias" class="nav__link">Noticias</a></li>
                 <li><a href="#contacto" class="nav__link">Contacto</a></li>
             </ul>
             <div class="nav__toggle" id="nav-toggle">
@@ -48,6 +47,7 @@
                 <div class="hero__buttons">
                     <a href="#contacto" class="btn btn--primary">Contactar Ahora</a>
                     <a href="#servicios" class="btn btn--secondary">Nuestros Servicios</a>
+                    <button id="cotizacion-btn" class="btn btn--primary">Solicite Cotización</button>
                 </div>
             </div>
             <div class="hero__image">
@@ -114,221 +114,44 @@
                 <h2 class="section__title">Nuestros Servicios</h2>
                 <p class="section__subtitle">Soluciones contables integrales para tu negocio</p>
             </div>
-            <div class="services__grid">
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Contabilidad General</h3>
-                    <p class="service__description">
-                        Llevamos la contabilidad de tu empresa de manera profesional y organizada, 
-                        cumpliendo con todas las normativas vigentes.
-                    </p>
-                    <div class="service__price">
-                        <span class="price__label">Desde</span>
-                        <span class="price__amount">$XX.XXX</span>
-                        <span class="price__period">/mes</span>
-                    </div>
+            <div class="services__list">
+                <div class="services__category">
+                    <h3 class="services__category-title">
+                        <i class="fas fa-calculator"></i> Servicios Contables
+                    </h3>
+                    <ul class="services__items">
+                        <li>Constitución y clausura de empresas</li>
+                        <li>Contabilidad mensual</li>
+                        <li>Impuestos mensuales y anuales</li>
+                        <li>Declaraciones juradas</li>
+                        <li>Estados contables</li>
+                        <li>Reportes gerenciales</li>
+                        <li>Asesoramiento fiscal</li>
+                        <li>Exoneraciones impositivas</li>
+                        <li>Mantenimiento societario</li>
+                    </ul>
                 </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                            <line x1="1" y1="10" x2="23" y2="10"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Asesoría Fiscal</h3>
-                    <p class="service__description">
-                        Te ayudamos a optimizar tu carga fiscal y cumplir con todas tus obligaciones 
-                        tributarias de manera eficiente.
-                    </p>
-                    <div class="service__price">
-                        <span class="price__label">Desde</span>
-                        <span class="price__amount">$XX.XXX</span>
-                        <span class="price__period">/mes</span>
-                    </div>
+                <div class="services__category">
+                    <h3 class="services__category-title">
+                        <i class="fas fa-users"></i> Gestión Laboral (RRHH y Sueldos)
+                    </h3>
+                    <ul class="services__items">
+                        <li>Liquidación de sueldos y jornales</li>
+                        <li>Altas y bajas en BPS y FONASA</li>
+                        <li>Certificaciones y notificaciones laborales</li>
+                        <li>Asistencia en inspecciones</li>
+                        <li>Reclutamiento y selección</li>
+                        <li>Contratos laborales y documentación</li>
+                        <li>Capacitación del personal</li>
+                    </ul>
                 </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Consultoría Empresarial</h3>
-                    <p class="service__description">
-                        Asesoramiento estratégico para la toma de decisiones financieras 
-                        y el crecimiento sostenible de tu empresa.
-                    </p>
-                    <div class="service__price">
-                        <span class="price__label">Desde</span>
-                        <span class="price__amount">$XX.XXX</span>
-                        <span class="price__period">/mes</span>
-                    </div>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="12" y1="1" x2="12" y2="23"></line>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Liquidación de Sueldos</h3>
-                    <p class="service__description">
-                        Gestión completa de nóminas, liquidaciones y cargas sociales 
-                        para tu personal.
-                    </p>
-                    <div class="service__price">
-                        <span class="price__label">Desde</span>
-                        <span class="price__amount">$XX.XXX</span>
-                        <span class="price__period">/mes</span>
-                    </div>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Auditorías</h3>
-                    <p class="service__description">
-                        Realizamos auditorías contables para verificar la correcta 
-                        gestión de tus recursos financieros.
-                    </p>
-                    <div class="service__price">
-                        <span class="price__label">Desde</span>
-                        <span class="price__amount">$XX.XXX</span>
-                        <span class="price__period">/proyecto</span>
-                    </div>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="12" y1="18" x2="12" y2="12"></line>
-                            <line x1="9" y1="15" x2="15" y2="15"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Declaraciones Juradas</h3>
-                    <p class="service__description">
-                        Preparación y presentación de todas tus declaraciones juradas 
-                        de manera oportuna y precisa.
-                    </p>
-                    <div class="service__price">
-                        <span class="price__label">Desde</span>
-                        <span class="price__amount">$XX.XXX</span>
-                        <span class="price__period">/declaración</span>
-                    </div>
-                </div>
+            </div>
+            <div class="services__cta">
+                <button id="cotizacion-btn-services" class="btn btn--primary btn--large">Solicite Cotización</button>
             </div>
         </div>
     </section>
 
-    <!-- Noticias Section -->
-    <section class="news" id="noticias">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Noticias</h2>
-                <p class="section__subtitle">Mantente informado sobre las últimas novedades contables, fiscales y legales</p>
-            </div>
-            <div class="news__grid">
-                <article class="news__card">
-                    <div class="news__date">
-                        <span class="news__day">15</span>
-                        <span class="news__month">ENE</span>
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Nuevas normativas fiscales 2024</h3>
-                        <p class="news__excerpt">
-                            Conoce los cambios más importantes en la legislación fiscal que entrarán en vigor 
-                            este año y cómo afectan a tu empresa.
-                        </p>
-                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="news__card">
-                    <div class="news__date">
-                        <span class="news__day">08</span>
-                        <span class="news__month">ENE</span>
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Plazos de presentación de declaraciones juradas</h3>
-                        <p class="news__excerpt">
-                            Importante recordatorio sobre los plazos para la presentación de declaraciones 
-                            juradas y cómo evitar sanciones.
-                        </p>
-                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="news__card">
-                    <div class="news__date">
-                        <span class="news__day">22</span>
-                        <span class="news__month">DIC</span>
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Beneficios fiscales para pymes</h3>
-                        <p class="news__excerpt">
-                            Descubre los beneficios fiscales y contables disponibles para pequeñas y medianas 
-                            empresas en el nuevo régimen.
-                        </p>
-                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="news__card">
-                    <div class="news__date">
-                        <span class="news__day">10</span>
-                        <span class="news__month">DIC</span>
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Actualización en normativa laboral</h3>
-                        <p class="news__excerpt">
-                            Cambios importantes en la legislación laboral que impactan en la liquidación 
-                            de sueldos y cargas sociales.
-                        </p>
-                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="news__card">
-                    <div class="news__date">
-                        <span class="news__day">28</span>
-                        <span class="news__month">NOV</span>
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Digitalización de procesos contables</h3>
-                        <p class="news__excerpt">
-                            Cómo la tecnología está transformando la gestión contable y qué herramientas 
-                            pueden optimizar tu negocio.
-                        </p>
-                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="news__card">
-                    <div class="news__date">
-                        <span class="news__day">15</span>
-                        <span class="news__month">NOV</span>
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Requisitos para auditorías externas</h3>
-                        <p class="news__excerpt">
-                            Todo lo que necesitas saber sobre los requisitos y procedimientos para realizar 
-                            una auditoría contable exitosa.
-                        </p>
-                        <a href="#" class="news__link">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
 
     <!-- Contacto Section -->
     <section class="contact" id="contacto">
@@ -364,6 +187,17 @@
                     </div>
                     <div class="contact__item">
                         <div class="contact__icon">
+                            <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5491112345678" target="_blank" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
@@ -371,8 +205,7 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>info@rplestudiocontable.com</p>
-                            <p>contadores@rplestudiocontable.com</p>
+                            <p>rplestudiocontable@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -412,7 +245,6 @@
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#noticias">Noticias</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -421,8 +253,7 @@
                     <div class="footer__contact">
                         <p><i class="fas fa-map-marker-alt"></i> Tu dirección aquí, Ciudad, País</p>
                         <p><i class="fas fa-phone"></i> +54 11 1234-5678</p>
-                        <p><i class="fas fa-envelope"></i> info@rplestudiocontable.com</p>
-                        <p><i class="fas fa-envelope"></i> contadores@rplestudiocontable.com</p>
+                        <p><i class="fas fa-envelope"></i> rplestudiocontable@gmail.com</p>
                     </div>
                 </div>
                 <div class="footer__section">
@@ -448,6 +279,365 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal de Cotización -->
+    <div id="cotizacion-modal" class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">FORMULARIO DE SOLICITUD DE COTIZACIÓN</h2>
+                <span class="modal__close">&times;</span>
+            </div>
+            <form id="cotizacion-form" class="cotizacion-form">
+                <!-- Datos de contacto -->
+                <div class="form__section">
+                    <h3 class="form__section-title">🔹 Datos de contacto</h3>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label">Nombre completo <span class="required">*</span></label>
+                            <input type="text" class="form__input" name="nombre" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Documento/RUT/CI (opcional)</label>
+                            <input type="text" class="form__input" name="documento">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label">Correo electrónico <span class="required">*</span></label>
+                            <input type="email" class="form__input" name="email" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Teléfono / Celular <span class="required">*</span></label>
+                            <input type="tel" class="form__input" name="telefono" required>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Ciudad / País</label>
+                        <input type="text" class="form__input" name="ciudad">
+                    </div>
+                </div>
+
+                <!-- Sobre su empresa -->
+                <div class="form__section">
+                    <h3 class="form__section-title">🔹 Sobre su empresa / situación</h3>
+                    <div class="form__group">
+                        <label class="form__label">Tipo de persona / negocio <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="Monotributo" required>
+                                <span>Monotributo</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="Persona física (unipersonal)" required>
+                                <span>Persona física (unipersonal)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="SAS" required>
+                                <span>SAS</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="SRL" required>
+                                <span>SRL</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="SA" required>
+                                <span>SA</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="Sin empresa constituida" required>
+                                <span>Sin empresa constituida (quiero abrir una)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="Cooperativa" required>
+                                <span>Cooperativa</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo_negocio" value="Otra" id="otra-tipo" required>
+                                <span>Otra:</span>
+                                <input type="text" class="form__input form__input--inline" name="tipo_negocio_otra" id="tipo-otra-input" placeholder="Especifique">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Estado actual <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="estado" value="Activa" required>
+                                <span>Activa</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="estado" value="Sin actividad / quiero regularizar" required>
+                                <span>Sin actividad / quiero regularizar</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="estado" value="En proceso de cierre" required>
+                                <span>En proceso de cierre</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="estado" value="Nueva / por constituir" required>
+                                <span>Nueva / por constituir</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicios que necesita -->
+                <div class="form__section">
+                    <h3 class="form__section-title">🔹 Servicios que necesita (selección múltiple)</h3>
+                    <div class="form__group">
+                        <label class="form__subtitle">Servicios contables / tributarios</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Constitución de empresa">
+                                <span>Constitución de empresa</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Clausura / baja ante DGI y BPS">
+                                <span>Clausura / baja ante DGI y BPS</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Contabilidad mensual">
+                                <span>Contabilidad mensual</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Liquidación y pago de impuestos">
+                                <span>Liquidación y pago de impuestos</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Declaraciones juradas anuales">
+                                <span>Declaraciones juradas anuales</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Estados contables">
+                                <span>Estados contables</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Reportes gerenciales / informes a socios">
+                                <span>Reportes gerenciales / informes a socios</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Asesoramiento fiscal">
+                                <span>Asesoramiento fiscal</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Exoneraciones / beneficios impositivos">
+                                <span>Exoneraciones / beneficios impositivos</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Mantenimiento societario anual">
+                                <span>Mantenimiento societario anual</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__subtitle">Gestión laboral / RRHH y sueldos</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Liquidación de sueldos y jornales">
+                                <span>Liquidación de sueldos y jornales</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Altas y bajas ante BPS / FONASA">
+                                <span>Altas y bajas ante BPS / FONASA</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Certificaciones laborales">
+                                <span>Certificaciones laborales</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Inspecciones laborales / asesoría">
+                                <span>Inspecciones laborales / asesoría</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Reclutamiento y selección">
+                                <span>Reclutamiento y selección</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Contratos laborales y documentación">
+                                <span>Contratos laborales y documentación</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Capacitación / onboarding">
+                                <span>Capacitación / onboarding</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicios" value="Administración de personal tercerizado">
+                                <span>Administración de personal tercerizado</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Otros servicios requeridos</label>
+                        <input type="text" class="form__input" name="otros_servicios" placeholder="Especifique otros servicios">
+                    </div>
+                </div>
+
+                <!-- Detalle operativos -->
+                <div class="form__section">
+                    <h3 class="form__section-title">🔹 Detalle operativos para cotizar correctamente</h3>
+                    
+                    <div class="form__group">
+                        <label class="form__label">📌 1. ¿Tiene personal a cargo? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tiene_personal" value="Sí" required>
+                                <span>Sí</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tiene_personal" value="No" required>
+                                <span>No</span>
+                            </label>
+                        </div>
+                        <div id="personal-details" class="personal-details" style="display: none; margin-top: 1rem;">
+                            <label class="form__label">Cantidad de empleados:</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="cantidad_empleados" value="1-3">
+                                    <span>1-3</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="cantidad_empleados" value="4-10">
+                                    <span>4-10</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="cantidad_empleados" value="Más de 10">
+                                    <span>Más de 10</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="cantidad_empleados" value="Más de 30">
+                                    <span>Más de 30</span>
+                                </label>
+                            </div>
+                            <label class="form__label">Modalidades:</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalidades" value="Mensuales">
+                                    <span>Mensuales</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalidades" value="Jornaleros">
+                                    <span>Jornaleros</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="modalidades" value="Otros" id="otros-modalidades">
+                                    <span>Otros:</span>
+                                    <input type="text" class="form__input form__input--inline" name="modalidades_otros" id="modalidades-otros-input" placeholder="Especifique">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label">📌 2. ¿Cuántos comprobantes mensuales maneja? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="comprobantes" value="Menos de 20" required>
+                                <span>Menos de 20</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="comprobantes" value="20–100" required>
+                                <span>20–100</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="comprobantes" value="100–300" required>
+                                <span>100–300</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="comprobantes" value="Más de 300" required>
+                                <span>Más de 300</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="comprobantes" value="No sé / que me asesoren" required>
+                                <span>No sé / que me asesoren</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label">📌 3. ¿Su empresa tiene actividad gravada con…? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="actividad_gravada" value="IVA Básico 22%" required>
+                                <span>IVA Básico 22%</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="actividad_gravada" value="IVA minimizado" required>
+                                <span>IVA minimizado</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="actividad_gravada" value="Exoneración / exportación / zona franca" required>
+                                <span>Exoneración / exportación / zona franca</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="actividad_gravada" value="Solo IRPF" required>
+                                <span>Solo IRPF</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="actividad_gravada" value="No sé / necesito asesoramiento" required>
+                                <span>No sé / necesito asesoramiento</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label">📌 4. ¿Requiere trámites urgentes? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tramites_urgentes" value="Sí" id="urgentes-si" required>
+                                <span>Sí</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tramites_urgentes" value="No — plazo estándar" required>
+                                <span>No — plazo estándar</span>
+                            </label>
+                        </div>
+                        <div id="fecha-limite" class="fecha-limite" style="display: none; margin-top: 1rem;">
+                            <label class="form__label">Fecha límite o plazo deseado:</label>
+                            <input type="text" class="form__input" name="fecha_limite" placeholder="Ej: 15 de marzo de 2024">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Observaciones -->
+                <div class="form__section">
+                    <div class="form__group">
+                        <label class="form__label">Comentarios adicionales o detalle del caso</label>
+                        <textarea class="form__input form__textarea" name="observaciones" rows="5" placeholder="Escriba aquí cualquier información adicional que considere relevante..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Cómo desea ser contactado -->
+                <div class="form__section">
+                    <div class="form__group">
+                        <label class="form__label">Cómo desea ser contactado <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contacto" value="WhatsApp" required>
+                                <span>WhatsApp</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contacto" value="Email" required>
+                                <span>Email</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contacto" value="Llamada telefónica" required>
+                                <span>Llamada telefónica</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contacto" value="Videollamada (Zoom / Meet)" required>
+                                <span>Videollamada (Zoom / Meet)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__actions">
+                    <button type="button" class="btn btn--secondary modal__cancel">Cancelar</button>
+                    <button type="submit" class="btn btn--primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
